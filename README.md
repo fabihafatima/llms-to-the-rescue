@@ -24,16 +24,16 @@ The results demonstrate that style transfer via LLMs for data augmentation:
 The following steps are organized into separate cells within the same file, `llms_to_the_rescue.ipynb`:
 1. **`data_preprocessing`:** Contains data preparation steps, including handling the imbalanced dataset.
 2. **`augmentation_baseline`:** Implements the baseline augmentation strategy.
-3. **`augmentation_style_transfer`:** Implements the advanced style transfer-based augmentation.
+3. **`llm_model`:** Implements the advanced style transfer-based augmentation model.
 4. **`model_training`:** Trains and evaluates the classifiers.
-5. **`results_analysis`:** Analyzes and visualizes the results of the augmentation methods.
+5. **`style_transfer_results`:** Analyzes and visualizes the results of the augmentation methods from new style transfer technique through LLM and old techniques.
 
 ## Getting Started
 1. **Environment Setup:**
-   - Open the `.ipynb` files in Google Colab.
+   - Open the `llm_model.ipynb` files in Google Colab.
    - Install the required Python packages by running the following command in a Colab cell:
      ```bash
-     !pip install transformers sklearn matplotlib pandas
+     !pip install pandas torch transformers datasets
      ```
 
 2. **Dataset Preparation:**
